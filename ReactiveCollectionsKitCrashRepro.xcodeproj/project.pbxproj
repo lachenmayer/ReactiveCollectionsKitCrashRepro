@@ -11,12 +11,12 @@
 		4AB209D02C7E12C90058E171 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB209CF2C7E12C90058E171 /* ContentView.swift */; };
 		4AB209D22C7E12CA0058E171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB209D12C7E12CA0058E171 /* Assets.xcassets */; };
 		4AB209D52C7E12CA0058E171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB209D42C7E12CA0058E171 /* Preview Assets.xcassets */; };
-		4AB209DD2C7E12F20058E171 /* ReactiveCollectionsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4AB209DC2C7E12F20058E171 /* ReactiveCollectionsKit */; };
 		4AB209DF2C7E12FC0058E171 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB209DE2C7E12FC0058E171 /* CollectionView.swift */; };
 		4AB209E22C7E13E90058E171 /* CompositionalLayoutDSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4AB209E12C7E13E90058E171 /* CompositionalLayoutDSL */; };
 		4AB209E42C7E14D80058E171 /* CollectionViewLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB209E32C7E14D80058E171 /* CollectionViewLayouts.swift */; };
 		4AB209E62C7E15760058E171 /* View+erase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB209E52C7E15760058E171 /* View+erase.swift */; };
 		4AB209E82C7E22520058E171 /* Int+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB209E72C7E22520058E171 /* Int+Identifiable.swift */; };
+		4AB209EB2C7E2B420058E171 /* ReactiveCollectionsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4AB209EA2C7E2B420058E171 /* ReactiveCollectionsKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB209EB2C7E2B420058E171 /* ReactiveCollectionsKit in Frameworks */,
 				4AB209E22C7E13E90058E171 /* CompositionalLayoutDSL in Frameworks */,
-				4AB209DD2C7E12F20058E171 /* ReactiveCollectionsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 			);
 			name = ReactiveCollectionsKitCrashRepro;
 			packageProductDependencies = (
-				4AB209DC2C7E12F20058E171 /* ReactiveCollectionsKit */,
 				4AB209E12C7E13E90058E171 /* CompositionalLayoutDSL */,
+				4AB209EA2C7E2B420058E171 /* ReactiveCollectionsKit */,
 			);
 			productName = ReactiveCollectionsKitCrashRepro;
 			productReference = 4AB209CA2C7E12C90058E171 /* ReactiveCollectionsKitCrashRepro.app */;
@@ -132,8 +132,8 @@
 			);
 			mainGroup = 4AB209C12C7E12C90058E171;
 			packageReferences = (
-				4AB209DB2C7E12F20058E171 /* XCRemoteSwiftPackageReference "ReactiveCollectionsKit" */,
 				4AB209E02C7E13E90058E171 /* XCRemoteSwiftPackageReference "CompositionalLayoutDSL" */,
+				4AB209E92C7E2B420058E171 /* XCRemoteSwiftPackageReference "ReactiveCollectionsKit" */,
 			);
 			productRefGroup = 4AB209CB2C7E12C90058E171 /* Products */;
 			projectDirPath = "";
@@ -374,14 +374,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4AB209DB2C7E12F20058E171 /* XCRemoteSwiftPackageReference "ReactiveCollectionsKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jessesquires/ReactiveCollectionsKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.5;
-			};
-		};
 		4AB209E02C7E13E90058E171 /* XCRemoteSwiftPackageReference "CompositionalLayoutDSL" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/faberNovel/CompositionalLayoutDSL";
@@ -390,18 +382,26 @@
 				kind = branch;
 			};
 		};
+		4AB209E92C7E2B420058E171 /* XCRemoteSwiftPackageReference "ReactiveCollectionsKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lachenmayer/ReactiveCollectionsKit";
+			requirement = {
+				branch = "fix-diffabledatasource-crash-2";
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4AB209DC2C7E12F20058E171 /* ReactiveCollectionsKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4AB209DB2C7E12F20058E171 /* XCRemoteSwiftPackageReference "ReactiveCollectionsKit" */;
-			productName = ReactiveCollectionsKit;
-		};
 		4AB209E12C7E13E90058E171 /* CompositionalLayoutDSL */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4AB209E02C7E13E90058E171 /* XCRemoteSwiftPackageReference "CompositionalLayoutDSL" */;
 			productName = CompositionalLayoutDSL;
+		};
+		4AB209EA2C7E2B420058E171 /* ReactiveCollectionsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AB209E92C7E2B420058E171 /* XCRemoteSwiftPackageReference "ReactiveCollectionsKit" */;
+			productName = ReactiveCollectionsKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

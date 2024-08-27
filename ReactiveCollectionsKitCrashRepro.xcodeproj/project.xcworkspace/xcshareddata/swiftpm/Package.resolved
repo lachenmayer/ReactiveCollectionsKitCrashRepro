@@ -1,5 +1,5 @@
 {
-  "originHash" : "ce3fd8ddc211dd1934b4e0405a854f624db26a33ef57687ff5dac301be6704c7",
+  "originHash" : "ce343fdbf19b151c038c44f24ae26a7db4b8eb3830595cd2a7b26a8c16796704",
   "pins" : [
     {
       "identity" : "compositionallayoutdsl",
@@ -13,10 +13,10 @@
     {
       "identity" : "reactivecollectionskit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jessesquires/ReactiveCollectionsKit.git",
+      "location" : "https://github.com/lachenmayer/ReactiveCollectionsKit",
       "state" : {
-        "revision" : "ef9db7a62a663c187cd6f22b3f55390d50aa5964",
-        "version" : "0.1.5"
+        "branch" : "fix-diffabledatasource-crash-2",
+        "revision" : "5adb442497de1fddeb325a55bbc4df3d5ef643da"
       }
     }
   ],
