@@ -1,0 +1,24 @@
+{
+  "originHash" : "ce3fd8ddc211dd1934b4e0405a854f624db26a33ef57687ff5dac301be6704c7",
+  "pins" : [
+    {
+      "identity" : "compositionallayoutdsl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/faberNovel/CompositionalLayoutDSL",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3b1c5adad64f031e28417ee9460dd58556cb6e33"
+      }
+    },
+    {
+      "identity" : "reactivecollectionskit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jessesquires/ReactiveCollectionsKit.git",
+      "state" : {
+        "revision" : "ef9db7a62a663c187cd6f22b3f55390d50aa5964",
+        "version" : "0.1.5"
+      }
+    }
+  ],
+  "version" : 3
+}

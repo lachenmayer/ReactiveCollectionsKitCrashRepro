@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# ruby tools
+.bundle/
+vendor/
+
+# docs
+docs/docsets/
+
+# Xcode
+xcuserdata/
+build/
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.swiftpm
+.build/
